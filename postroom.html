@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post room</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#db2340">
+
+<!-- predefine cdn -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="compress/bootstrap.min.css"> -->
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="compress/jquery.min.js"> -->
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="compress/bootstrap.min.js"> -->
+  
+    <!-- semantic ui -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="compress/semantic.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" type="text/css" href="css/postroom.css">
+</head>
+<body>
+
+ <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+      <nav class="nav"style="padding-top: 7px;">
+        <div class="container-fluid">
+          <!-- menu button -->
+          <li>
+            <button type="button" id="sidebarCollapse" class="btn btn-danger" style="background-color: #db2340;" onclick="goBack()">
+             <i class="arrow left icon" ></i>
+            </button>
+          </li>
+          <li class="pull-right"><h3  style="display: inline-block;">Rooms<strong style="color:red;">pay</strong></h3>
+          </li>
+        </div>
+      </nav>
+    <!-- header ends here -->
+
+<br>-
+
+
+<div class="container">
+    <div class="stepwizard">
+        <div class="stepwizard-row setup-panel">
+            <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-1" type="button" class="btn btn-success btn-circle">1</a>
+                <p class="mr-5"><small>Owner details</small></p>
+            </div>
+            <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                <p><small>Room details</small></p>
+            </div>
+            <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                <p><small>Other details</small></p>
+            </div>
+            <!-- <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                <p><small>Employment & Finance</small></p>
+            </div>
+             <div class="stepwizard-step col-xs-3"> 
+                <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                <p><small>Personal Safety</small></p>
+            </div> -->
+        </div>
+    </div>
+    
+        <div class="panel panel-primary setup-content" id="step-1">
+            <div class="form-group">
+              <label for="name">name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter name..." name="name">
+          </div>
+
+          <div class="form-group">
+              <label for="number">Phone:</label>
+              <input type="number" class="form-control" id="number" placeholder="Enter Phone number.." name="number">
+          </div>
+           <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+        <label for="pwd">Gender:</label>
+       <select class=" form-control" id="selectbtn">
+                <option >Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+        </select>  
+
+          <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div>
+
+        <label for="pwd">Profession:</label>   
+           <select class=" form-control" id="selectbtn">
+                <option >Student</option>
+                  <option>Student</option>
+                  <option>Employee</option>
+                  <option>Other</option>
+        </select>   
+          <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-default nextBtn pull-right">Next</button>
+
+        </div>
+        
+        <div class="panel panel-primary setup-content" id="step-2">
+          
+            <div class="form-group">
+              <label for="Address">Title:</label>
+              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
+          </div>
+
+           <div class="form-group">
+              <label for="status">Status:</label>
+                          <select required="" class="form-control">
+                                        <option value="">Any Status</option>
+                                        <option value="1">For Rent</option>
+                                        <option value="2">For Sale</option>
+                            </select>
+            </div>
+
+           <div class="form-group">
+              <label for="status">Status:</label>
+                          <select required="" class="form-control">
+                                        <option value="">All Type</option>
+                                        <option value="1">PG</option>
+                                        <option value="2">Hostel</option>
+                                        <option value="3">Room</option>
+                                        <option value="4">Flat</option>
+                                    </select>
+
+            </div>
+            <div class="form-group">
+              <label for="status">Status:</label>
+                         <select required="" class="form-control">
+                                        <option value="">Area</option>
+                                        <option value="1">Khajrana</option>
+                                        <option value="2">Vijay nagar</option>
+                                        <option value="3">Mahalaxmi nagar</option>
+                                        <option value="4">MIG</option>
+                                    </select>
+            </div>
+           <div class="form-group">
+              <label for="status">Status:</label>
+                         <select required="" class="form-control">
+                                        <option value="">Colony</option>
+                                        <option value="1">Malviya nagar</option>
+                                        <option value="2">Dheeraj nagar</option>
+                                        <option value="3">Mahalaxmi nagar</option>
+                                        <option value="4">MIG</option>
+                                    </select>
+            </div>
+            <div class="form-group">
+              <label for="Address">House number:</label>
+              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
+          </div>
+          <div class="form-group">
+              <label for="Address">Street :</label>
+              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
+          </div>
+           <div class="form-group">
+              <label for="Address">Landmark:</label>
+              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
+          </div>
+       
+       
+            <div class="form-group">
+              <label for="Address">Extra details:</label>
+              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
+          </div>
+       
+          <button type="submit" class="btn btn-default nextBtn pull-right">Next</button>
+        </div>
+        
+
+        <div class="panel panel-primary setup-content" id="step-3">
+         <div class="form-group">
+              <label for="status">Rooms:</label>
+                         <select required="" class="form-control">
+                                        <option value="">Colony</option>
+                                        <option value="1">Malviya nagar</option>
+                                        <option value="2">Dheeraj nagar</option>
+                                        <option value="3">Mahalaxmi nagar</option>
+                                        <option value="4">MIG</option>
+                                    </select>
+            </div>
+            <div class="form-group">
+              <label for="status">Facility:</label>
+                         <select required="" class="form-control">
+                                        <option value="">Colony</option>
+                                        <option value="1">Malviya nagar</option>
+                                        <option value="2">Dheeraj nagar</option>
+                                        <option value="3">Mahalaxmi nagar</option>
+                                        <option value="4">MIG</option>
+                                    </select>
+            </div>
+          <div class="form-group">
+              <label for="email">Price:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+              <label for="pwd">Description:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div>
+          <div class="form-group">
+              <label for="pwd">Photos:</label>
+              <input type="file" class="form-control" id="pwd" >
+          </div>
+          
+          <div class="form-group">
+              <label for="pwd">Other details:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+          </div>
+          
+          <button type="submit" class="btn btn-default pull-right">Submit</button>
+            </div>
+        </div>
+
+<!-- footer here -->
+<footer class="py-4 bg-dark text-white-50"   style="margin-top: 5%;flex-shrink: none;background-color: black;color: white;  padding: 30px;" 
+>
+<div class="container text-center">
+  <small>Roomspay &copy; All Rights Reserved</small>
+</div>
+</footer>
+<!-- footer ends here -->
+
+    
+<script type="text/javascript" src="js/postroom.js"></script>
+
+    <!-- semantic scripts here -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  function goBack() {
+  window.history.back();
+}
+</script>
+
+
+</body>
+</html>
