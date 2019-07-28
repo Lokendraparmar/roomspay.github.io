@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>Rooms pay</title>
+	<title>Admin page</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="theme-color" content="#db2340">
 
@@ -27,8 +26,6 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
 	
 	<!-- custom css -->
-	<link rel="stylesheet" type="text/css" href="css/herobanner.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/sidebar.css">
 
 
@@ -37,7 +34,6 @@
 </head>
 
 <body>
-
 
 <div class="wrapper">
 	<!-- Sidebar  -->
@@ -56,34 +52,43 @@
 					<div style="display: block;margin-left: 30%;margin-bottom: 2%;margin-top: -5%;margin-right: 30%;">
 					<img src="images/profile.png" alt="img" height="60px" width="80px" style="
     margin-left: 10%;border-radius: 30px;">
-					<p style="margin-left: 12%;">Profile</p>
+					<p style="margin-left: 12%;"><a href="profile.html">Profile</a></p>
 					</div>
 				</div>
 
 			<li class="active">
-				<a href="#">Home</a>
+				<a href="index.html">Home</a>
 			</li>
 			<li>
-				<a href="rooms.html">Rooms</a>
-				<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Register/login  </a>
+				<a href="#">Dashboard</a>
+				<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">user</a>
 				<ul class="collapse list-unstyled" id="pageSubmenu">
 					<li>
-						<a href="user.html">Log In</a>
+						<a href="registerd_renter.html">Register Renter</a>
 					</li>
 					<li>
-						<a href="admin.html">Admin</a>
-					</li>
-					<li>
-						<a href="profile.html">Renter</a>
-					</li>
-					<li>
-						<a href="profile.html">landlord</a>
+						<a href="registerd_owener.html">Register Owner</a>
 					</li>
 				</ul>
 			</li>
 			
 			<li>
-				<a href="about.html">About us</a>
+				<a href="registerd_room.html">Registerd room</a>
+			</li>
+
+			<li>
+				<a href="postroom.html">Post room by admin</a>
+			</li>
+			<li>
+				<a href="status.html">New Enquiry</a>
+			</li>
+
+			<li>
+				<a href="status.html">Enquired Status</a>
+			</li>
+
+			<li>
+				<a href="#">Log out</a>
 			</li>
 		</ul>
 
@@ -118,112 +123,9 @@
 
 
 <!-- body content start here -->
-
-<!-- main content here -->
 <main>
-	<div class="hero">
-		<div class="style-banner mx-auto">
-			<h3 class="text-wh font-weight-bold">Search and Find Your <span>Desired</span>Room</h3>
-			<p class="mt-2 text-li" id="find">Rooms for sale & for rent around the world</p>
-		</div>
-		<div class="ui search" >
-			<div class="ui icon input" >
-				<input class="prompt" type="text" placeholder="Search Rooms..." onclick="-moveToSearch()">
-				<i class="search icon"></i>
-			</div>
-			<div class="results"></div>
-		</div>
-
-		<div class="diagonal-hero-bg">
-
-			<div class="stars">
-				<div class="small"></div>
-				<div class="medium"></div>
-				<div class="big"></div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Postroom block -->
-	<table id="landlord" class="table">
-		<tr>
-			<th><button class="btn btn-default " ><a href="postroom.html">Post Room</a></button></th>
-			<th>Are You a landlord?<br>post your room here</th> 
-		</tr>
-
-	</table>
-
-	<!-- horiontal block here -->
-	<div class="container testimonial-group" style="margin-top: 2%;margin-bottom: 2%;">
-		<div class="row text-center">
-			<div class="col-xs-4"><a href="rooms.html">PG</a></div>
-			<div class="col-xs-4"><a href="rooms.html">Boys hostel</a></div>
-			<div class="col-xs-4"><a href="rooms.html">Girls Hostel</a></div>
-			<div class="col-xs-4"><a href="rooms.html">Single room</a></div>
-			<div class="col-xs-4"><a href="rooms.html">Double room</a></div>
-			<div class="col-xs-4"><a href="rooms.html">PG</a></div>
-			<div class="col-xs-4"><a href="rooms.html">PG</a></div>
-			<div class="col-xs-4"><a href="rooms.html">PG</a></div>
-			<div class="col-xs-4"><a href="rooms.html">PG</a></div>
-		</div>
-	</div>
-
-	<!-- testimonial block -->
-	<div class="uiblocks">
-		<h1 style="text-align: center;color: #db2340;">Our Testimonials</h1>
-		<div class="ui cards">
-			<div class="card">
-				<div class="content">
-					<div class="header">Elliot Fu</div>
-					<div class="description">
-						Elliot Fu is a film-maker from New York.
-					</div>
-				</div>
-				<div class="ui bottom attached button">
-					<i class="add icon"></i>
-					Add Friend
-				</div>
-			</div>
-			<div class="card">
-				<div class="content">
-					<div class="header">Veronika Ossi</div>
-					<div class="description">
-						Veronika Ossi is a set designer living in New York who enjoys kittens, music, and partying.
-					</div>
-				</div>
-				<div class="ui bottom attached button">
-					<i class="add icon"></i>
-					Add Friend
-				</div>
-			</div>
-			<div class="card">
-				<div class="content">
-					<div class="header">Jenny Hess</div>
-					<div class="description">
-						Jenny is a student studying Media Management at the New School
-					</div>
-				</div>
-				<div class="ui bottom attached button">
-					<i class="add icon"></i>
-					Add Friend
-				</div>
-			</div>
-			<div class="card">
-				<div class="content">
-					<div class="header">Jenny Hess</div>
-					<div class="description">
-						Jenny is a student studying Media Management at the New School
-					</div>
-				</div>
-				<div class="ui bottom attached button">
-					<i class="add icon"></i>
-					Add Friend
-				</div>
-			</div>
-		</div>
-	</div>
+	hello
 </main>
-<!-- main content ends here -->
 
 <!-- footer here -->
 <footer class="py-4 bg-dark text-white-50"   style="margin-top: 5%;flex-shrink: none;background-color: black;color: white;  padding: 30px;" 
@@ -242,10 +144,6 @@
 </div>
 
 <div class="overlay"></div>
-
-
-
-
 
 
 
@@ -289,6 +187,7 @@
 	</script>
 
 	<!-- scripts ends here -->
+
 
 </body>
 </html>
