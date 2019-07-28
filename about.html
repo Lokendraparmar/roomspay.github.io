@@ -95,7 +95,7 @@ body {
   h4 {
     font-size: 19px;
     line-height: 1.375em;
-    color: #303030;
+    color: #f14747;
     font-weight: 400;
     margin-bottom: 30px;
   }  
@@ -105,6 +105,16 @@ body {
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
   }
+  @media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large screen only"]:not(.mobile),
+  [class*="widescreen only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+}
   
 /*main css*/
 </style>
@@ -353,7 +363,7 @@ body {
             </div>
             <div class="col-md-4 col-xl-3">
               <h5>Links</h5>
-              <ul class="nav-list">
+              <ul class="nav-list mobile hidden">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Blog</a></li>

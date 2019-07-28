@@ -163,13 +163,17 @@ ul.timeline > li {
     margin: 20px 0;
     padding-left: 60px;
 }
+ul.timeline > li a{
+color:#f3184b;
+}
+
 ul.timeline > li:before {
     content: ' ';
     background: white;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid #22c0e8;
+    border: 3px solid #f3184b;
     left: 20px;
     width: 20px;
     height: 20px;
