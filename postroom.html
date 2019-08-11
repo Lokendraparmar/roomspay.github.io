@@ -57,11 +57,11 @@
             </div>
             <div class="stepwizard-step col-xs-3"> 
                 <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                <p><small>Room details</small></p>
+                <p><small>Room Location</small></p>
             </div>
             <div class="stepwizard-step col-xs-3"> 
                 <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                <p><small>Other details</small></p>
+                <p><small>Room Details</small></p>
             </div>
             <!-- <div class="stepwizard-step col-xs-3"> 
                 <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
@@ -76,7 +76,7 @@
     
         <div class="panel panel-primary setup-content" id="step-1">
             <div class="form-group">
-              <label for="name">name:</label>
+              <label for="name">Full name:</label>
               <input type="text" class="form-control" id="name" placeholder="Enter name..." name="name">
           </div>
 
@@ -108,74 +108,52 @@
                   <option>Employee</option>
                   <option>Other</option>
         </select>   
-          <div class="checkbox">
-              <label><input type="checkbox" name="remember"> Remember me</label>
-          </div>
+        <br>
           <button type="submit" class="btn btn-default nextBtn pull-right">Next</button>
 
         </div>
         
-        <div class="panel panel-primary setup-content" id="step-2">
-          
-            <div class="form-group">
-              <label for="Address">Title:</label>
-              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
-          </div>
 
-           <div class="form-group">
-              <label for="status">Status:</label>
+  <!-- form 2 -->
+       
+    <div class="panel panel-primary setup-content" id="step-2">
+          
+            
+
+          <div class="form-group">
+              <label for="Address">Area</label>
                           <select required="" class="form-control">
-                                        <option value="">Any Status</option>
-                                        <option value="1">For Rent</option>
-                                        <option value="2">For Sale</option>
+                                        <option value="">Select Area</option>
+                                        <option value="1">Vijay nagar</option>
+                                        <option value="2">Khajrana</option>
                             </select>
             </div>
 
            <div class="form-group">
-              <label for="status">Status:</label>
+              <label for="Address">Colony</label>
                           <select required="" class="form-control">
-                                        <option value="">All Type</option>
-                                        <option value="1">PG</option>
-                                        <option value="2">Hostel</option>
-                                        <option value="3">Room</option>
-                                        <option value="4">Flat</option>
-                                    </select>
-
-            </div>
-            <div class="form-group">
-              <label for="status">Status:</label>
-                         <select required="" class="form-control">
-                                        <option value="">Area</option>
-                                        <option value="1">Khajrana</option>
-                                        <option value="2">Vijay nagar</option>
-                                        <option value="3">Mahalaxmi nagar</option>
-                                        <option value="4">MIG</option>
-                                    </select>
-            </div>
-           <div class="form-group">
-              <label for="status">Status:</label>
-                         <select required="" class="form-control">
-                                        <option value="">Colony</option>
-                                        <option value="1">Malviya nagar</option>
+                                        <option value="">Select Colony</option>
+                                        <option value="1">malviya nagar</option>
                                         <option value="2">Dheeraj nagar</option>
-                                        <option value="3">Mahalaxmi nagar</option>
-                                        <option value="4">MIG</option>
-                                    </select>
+                            </select>
             </div>
+
             <div class="form-group">
-              <label for="Address">House number:</label>
-              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
-          </div>
-          <div class="form-group">
-              <label for="Address">Street :</label>
-              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
-          </div>
-           <div class="form-group">
-              <label for="Address">Landmark:</label>
-              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
-          </div>
-       
-       
+                <label for="Address">Street No.</label>
+                <input type="text" class="form-control" id="Address" placeholder="Enter Street number..." Address="Address">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="Address">House number</label>
+                <input type="text" class="form-control" id="Address" placeholder="Enter House number..." Address="Address">
+            </div>
+
+            <div class="form-group">
+                <label for="Address">Any landmark</label>
+                <input type="text" class="form-control" id="Address" placeholder="Enter Landmark..." Address="Address">
+            </div>
+
             <div class="form-group">
               <label for="Address">Extra details:</label>
               <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
@@ -184,39 +162,83 @@
           <button type="submit" class="btn btn-default nextBtn pull-right">Next</button>
         </div>
         
-
+<!-- form 3 -->
         <div class="panel panel-primary setup-content" id="step-3">
-         <div class="form-group">
-              <label for="status">Rooms:</label>
-                         <select required="" class="form-control">
-                                        <option value="">Colony</option>
-                                        <option value="1">Malviya nagar</option>
-                                        <option value="2">Dheeraj nagar</option>
-                                        <option value="3">Mahalaxmi nagar</option>
-                                        <option value="4">MIG</option>
-                                    </select>
-            </div>
+           
             <div class="form-group">
-              <label for="status">Facility:</label>
-                         <select required="" class="form-control">
-                                        <option value="">Colony</option>
-                                        <option value="1">Malviya nagar</option>
-                                        <option value="2">Dheeraj nagar</option>
-                                        <option value="3">Mahalaxmi nagar</option>
-                                        <option value="4">MIG</option>
-                                    </select>
+                <label>Rooms for</label><br>
+                <div class="form-group ui buttons">
+                  <button class="ui button">Girls</button>
+                  <button class="ui button active">Boys</button>
+                  <button class="ui button">Family</button>
+                </div>
             </div>
+<br>
+            <div class="form-group">
+                <label>Property feature</label><br>
+                <div class="form-group ui buttons">
+                  <button class="ui button">Room</button>
+                  <button class="ui button active">Kichen</button>
+                  <button class="ui button">Bathroom</button>
+                </div>
+            </div>
+
+
+            <br>
+            <div class="form-group">
+                <label>Property feature</label><br>
+                <div class="form-group ui buttons">
+                  <button class="ui button">Furnished</button>
+                  <button class="ui button active">Semi-Furnished</button>
+                  <button class="ui button">Unfurnished</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label for="status">Floor Number:</label>
+                         <select required="" class="form-control">
+                                        <option value="">Select Floor</option>
+                                        <option value="1">Ground Floor</option>
+                                        <option value="2">First Floor</option>
+                                        <option value="3">Second Floor</option>
+                                        <option value="4">Third Floor</option>
+                                        <option value="4">More then 3</option>
+                                      </select>
+            </div>
+
           <div class="form-group">
-              <label for="email">Price:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              <label for="email">Room size(In Square feet)</label>
+              <input type="text" class="form-control" id="email" placeholder="Enter Room size" name="email">
           </div>
+
           <div class="form-group">
-              <label for="pwd">Description:</label>
-              <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                <label>Available things in room</label><br>
+                <div class="form-group ui buttons">
+                  <button class="ui button">Fan</button>
+                  <button class="ui button active">Bed</button>
+                  <button class="ui button">Lights</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Room Rent</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Room Rent" name="email">
+            </div>
+  
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember">With Electricity Bill</label>
+           
+                <label><input type="checkbox" name="remember">WithOut Electricity Bill</label>
+            </div>
+
+          <div class="form-group">
+              <label for="pwd">Room Description:</label>
+              <input type="text" class="form-control" id="pwd" placeholder="Enter Description" name="pwd">
           </div>
+
           <div class="form-group">
               <label for="pwd">Photos:</label>
-              <input type="file" class="form-control" id="pwd" >
+              <input type="file"  id="pwd" >
           </div>
           
           <div class="form-group">
