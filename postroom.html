@@ -100,14 +100,14 @@
               <label for="pwd">Password:</label>
               <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
           </div>
-
+<!-- 
         <label for="pwd">Profession:</label>   
            <select class=" form-control" id="selectbtn">
                 <option >Student</option>
                   <option>Student</option>
                   <option>Employee</option>
                   <option>Other</option>
-        </select>   
+        </select>    -->
         <br>
           <button type="submit" class="btn btn-default nextBtn pull-right">Next</button>
 
@@ -137,63 +137,17 @@
                                         <option value="2">Dheeraj nagar</option>
                             </select>
             </div>
-
+<!-- 
             <div class="form-group">
                 <label for="Address">Street No.</label>
                 <input type="text" class="form-control" id="Address" placeholder="Enter Street number..." Address="Address">
-            </div>
+            </div> -->
 
             
             <div class="form-group">
-                <label for="Address">House number</label>
-                <input type="text" class="form-control" id="Address" placeholder="Enter House number..." Address="Address">
+                <label for="Address">House Address</label>
+                <input type="text" class="form-control" id="Address" placeholder="Enter House Address..." Address="Address">
             </div>
-
-            <div class="form-group">
-                <label for="Address">Any landmark</label>
-                <input type="text" class="form-control" id="Address" placeholder="Enter Landmark..." Address="Address">
-            </div>
-
-            <div class="form-group">
-              <label for="Address">Extra details:</label>
-              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
-          </div>
-       
-          <button type="submit" class="btn btn-default nextBtn pull-right">Next</button>
-        </div>
-        
-<!-- form 3 -->
-        <div class="panel panel-primary setup-content" id="step-3">
-           
-            <div class="form-group">
-                <label>Rooms for</label><br>
-                <div class="form-group ui buttons">
-                  <button class="ui button">Girls</button>
-                  <button class="ui button active">Boys</button>
-                  <button class="ui button">Family</button>
-                </div>
-            </div>
-<br>
-            <div class="form-group">
-                <label>Property feature</label><br>
-                <div class="form-group ui buttons">
-                  <button class="ui button">Room</button>
-                  <button class="ui button active">Kichen</button>
-                  <button class="ui button">Bathroom</button>
-                </div>
-            </div>
-
-
-            <br>
-            <div class="form-group">
-                <label>Property feature</label><br>
-                <div class="form-group ui buttons">
-                  <button class="ui button">Furnished</button>
-                  <button class="ui button active">Semi-Furnished</button>
-                  <button class="ui button">Unfurnished</button>
-                </div>
-            </div>
-
             <div class="form-group">
               <label for="status">Floor Number:</label>
                          <select required="" class="form-control">
@@ -206,19 +160,86 @@
                                       </select>
             </div>
 
+            <div class="form-group">
+                <label for="Address">Any landmark</label>
+                <input type="text" class="form-control" id="Address" placeholder="Enter Landmark..." Address="Address">
+            </div>
+
+
+            <!-- 
+            <div class="form-group">
+              <label for="Address">Extra details:</label>
+              <input type="text" class="form-control" id="Address" placeholder="Enter Address..." Address="Address">
+          </div> -->
+       
+          <button type="submit" class="btn btn-default nextBtn pull-right">Next</button>
+        </div>
+        
+<!-- form 3 -->
+        <div class="panel panel-primary setup-content" id="step-3">
+
+          <div class="form-group">
+            <label>Room Title:</label>
+            <input type="text" class="form-control" id="pwd" placeholder="Enter Description" name="pwd">
+          </div>
+
+            <div class="form-group">
+                <label>Rooms for</label><br>
+  
+                <div class="checkbox">
+                  <label><input type="checkbox" name="remember">Boys</label>
+                  <label><input type="checkbox" name="remember">Girls</label>
+                  <label><input type="checkbox" name="remember">Family</label>
+                  <label><input type="checkbox" name="remember">PG</label>
+                </div>
+  
+  
+                <!-- <div class="form-group ui buttons">
+                  <button class="ui button">Girls</button>
+                  <button class="ui button active">Boys</button>
+                  <button class="ui button">Family</button>
+                </div> -->
+            </div>
+<br>
+            <div class="form-group">
+                <label>Property feature</label><br>
+                
+                <div class="checkbox">
+                  <label><input type="checkbox" name="remember">1 Room with kichen</label>
+                  <label><input type="checkbox" name="remember">2 BHK</label>
+                  <label><input type="checkbox" name="remember">Single room</label>
+                </div>
+<!-- 
+                <div class="form-group ui buttons">
+                  <button class="ui button">Room</button>
+                  <button class="ui button active">Kichen</button>
+                  <button class="ui button">Bathroom</button>
+                </div> -->
+            </div>
+
+
+            <div class="form-group">
+                <!-- <label>Property feature</label><br> -->
+                <div class="form-group ui buttons">
+                  <button class="ui button">Furnished</button>
+                  <button class="ui button active">Semi-Furnished</button>
+                  <button class="ui button">Unfurnished</button>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label>Available things in room</label><br>
+              <div class="form-group ui buttons">
+                <button class="ui button">Fan</button>
+                <button class="ui button active">Bed</button>
+                <button class="ui button">Lights</button>
+              </div>
+          </div>
+
           <div class="form-group">
               <label for="email">Room size(In Square feet)</label>
               <input type="text" class="form-control" id="email" placeholder="Enter Room size" name="email">
           </div>
-
-          <div class="form-group">
-                <label>Available things in room</label><br>
-                <div class="form-group ui buttons">
-                  <button class="ui button">Fan</button>
-                  <button class="ui button active">Bed</button>
-                  <button class="ui button">Lights</button>
-                </div>
-            </div>
 
             <div class="form-group">
                 <label for="email">Room Rent</label>
@@ -231,10 +252,6 @@
                 <label><input type="checkbox" name="remember">WithOut Electricity Bill</label>
             </div>
 
-          <div class="form-group">
-              <label for="pwd">Room Description:</label>
-              <input type="text" class="form-control" id="pwd" placeholder="Enter Description" name="pwd">
-          </div>
 
           <div class="form-group">
               <label for="pwd">Photos:</label>
