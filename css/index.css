@@ -192,9 +192,9 @@ body {
 /* Decorations */
 .col-xs-4{padding: 10px;margin-bottom: 2px;}
 .col-xs-4 a{ color: #fff; font-size: 14px; padding-bottom: 20px; padding-top: 18px;padding: 20px; }
-.col-xs-4:nth-child(3n+1) { background: #c69; }
-.col-xs-4:nth-child(3n+2) { background: #9c6; }
-.col-xs-4:nth-child(3n+3) { background: #69c; }
+.col-xs-4:nth-child(3n+1) { background: #bbb8ba; }
+.col-xs-4:nth-child(3n+2) { background: #bbb8ba; }
+.col-xs-4:nth-child(3n+3) { background: #bbb8ba; }
 
 
 /*ui blocks*/
